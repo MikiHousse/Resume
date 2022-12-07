@@ -1,0 +1,146 @@
+.header {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: #222831;
+    max-height: 100px;
+    &-nav {
+        display: flex;
+        justify-content: flex-end;
+        &__list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            color: #ffffff;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 1.5;
+        }
+        &__item {
+            display: block;
+            margin-right: 45px;
+            text-transform: uppercase;
+            &:last-child {
+                margin-right: 0; 
+           }
+            &:hover {
+                transition: 0.5s;
+                color: #4aa4ff;
+                border-bottom: solid -1px #4aa4ff;
+            }
+        
+        }
+        &__link {
+            color: inherit;
+            text-decoration: none;
+        }
+    }
+}
+
+.preview {
+    display: grid;
+    grid-template-columns: 400px 1fr;
+    column-gap: 75px;
+    padding-top: 100px;
+    &-description {
+        &__lead {
+            margin: 0;
+            font-weight: 700;
+            font-size: 36px;
+            color: #fff;
+        }
+        &__text {
+            margin: 0;
+            margin-top: 50px;
+            font-weight: 500;
+            font-size: 20px;
+            color: #fff;
+        }
+    }
+}
+
+.skills {
+    padding-top: 100px;
+    &__title {
+        font-weight: 700;
+        font-size: 36px;
+        padding-bottom: 50px;
+    }
+    &-list {
+        margin: 0;
+        padding: 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        list-style-type: none;
+        row-gap: 50px;
+        &__item {
+            width: 300px;
+            height: 300px;
+            border: solid 1px white;
+            padding: 20px;
+        }
+        &__head {
+            text-align: center;
+        }
+    }
+}
+
+.plans {
+    padding-top: 100px;
+    &__title {
+        padding-top: 50px;
+        font-weight: 700;
+        font-size: 36px;
+    }
+    &__text {
+        font-weight: 500;
+        font-size: 20px;
+        color: white;
+        text-align: center;
+    }
+}
+
+.portfolio {
+    padding-bottom: 100px;
+    &__title {
+        padding-top: 50px;
+        font-weight: 700;
+        font-size: 36px;
+    }
+    &-info {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding-top: 50px;
+        &__list {
+            list-style-type: none;
+            display: flex;
+            justify-content: space-between;
+            &-description {
+                list-style-type: none;
+            }
+        }
+        &__button {
+            border: none;
+            background-color: transparent;
+            color: white;
+            border-bottom: solid 1px transparent;
+            cursor: pointer;
+            &:hover {
+                border-bottom: solid 1px black;
+                transition: 0.5s;
+            }
+        }
+    }
+    &-present {
+        padding-top: 30px;
+        display: flex;
+        justify-content: space-between;
+        list-style-type: none;
+        padding-left: 0;
+        &-item {
+            cursor: pointer;
+        }
+    }
+}

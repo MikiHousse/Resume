@@ -1,0 +1,32 @@
+body {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-content: start;
+
+    min-width: 1440px;
+    min-height: 100vh;
+    margin: 0;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #ffffff;
+    background: linear-gradient(210deg, rgba(34, 40, 49), rgba(82, 97, 107));
+}
+
+.visually-hidden {
+    position: absolute;
+    clip: rect(1px, 1px, 1px, 1px);
+    padding: 0;
+    border: 0;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+}
+
+
+.container {
+    width: 1240px;
+    margin: 0 auto;
+}
+
+
+@import 'blocks/lead';

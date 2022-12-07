@@ -20,7 +20,8 @@ body {
     font-size: 18px;
     line-height: 1.5;
     color: var(--basic-white);
-    background-color: var(--basic-black);
+    /* background-color: var(--basic-black); */
+    background: linear-gradient(210deg, rgba(34,40,49), rgba(82,97,107));
 }
 
 .visually-hidden {
@@ -42,7 +43,7 @@ body {
 .header {
     padding-top: 40px;
     padding-bottom: 40px;
-    background-color: #1C1C1C;
+    background-color: #222831;
     max-height: 100px;
 }
 
@@ -84,9 +85,6 @@ body {
     transition: 0.5s;
     border-bottom: solid -1px #4aa4ff;
 }
-
-
-
 
 .menu-item-link {
     color: inherit;
@@ -146,67 +144,43 @@ body {
     text-align: center;
 }
 
+.development-title {
+    padding-bottom: 50px;
+}
 
-
-/* body {
+.dev {
     display: grid;
-    grid-template-columns: 100px auto;
-    min-width: 2048px;
-    min-height: 100vh;
-    margin: 0;
-    font-size: 18px;
-    line-height: 1.5;
-    color: var(--basic-white);
-    background-color: var(--basic-black);
-    background-position: 0 0;
-    background-repeat: no-repeat;
-    background-size: 100%
+    grid-template-columns: 1fr 1fr;
 }
 
-.container {
-    width: 1240px;
-    margin: 0 auto;
-    padding-left: 15px;
-    padding-right: 15px;
+.development {
+    position: relative;
+    padding-left: 35px;
+    list-style-type: none;
 }
 
-.header-nav {
-    display: grid;
-    grid-template-columns: 200px 1fr;
-    grid-column-gap: 50px;
-    box-sizing: border-box;
-    min-height: 80px;
-    align-items: center;
-    padding-top: 25px;
-    padding-bottom: 25px;
-    box-sizing: border-box;
-    min-height: 80px;
+
+.radius::before {
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background: #FFA501;
+    border-radius: 100%;
+    transform: translateY(-50%);
+    margin-left: -15px;
 }
 
-.menu {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: end;
-
-    margin: 0;
-    padding: 0;
-
-    list-style: none;
-    color:#f9f5f5;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 1.5;
+.development-list {
+    position: relative;
 }
 
-.menu-item {
-    margin-right: 30px;
+.development-list::after {
+    content: '';
+    width: 1px;
+    height: 100%;
+    position: absolute;
+    top: -18px;
+    left: 0;
+    background-color: #f6ede9;
 }
-
-.menu-item:last-child {
-    margin-right: 0;
-}
-
-.menu-item-link {
-    color: inherit;
-    text-decoration: none;
-} */

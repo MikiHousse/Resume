@@ -3,140 +3,213 @@
     <head>
         <meta charset="utf-8">
         <link href="normalize.css" rel="stylesheet"> 
-        <link href="style.css" rel="stylesheet">
+        <link href="./css/style.min.css" rel="stylesheet">
         <title>Фронтенд разработчик Михаил Бабайчев</title>
     </head>
     <body>
         <header class="header">
             <nav class="header-nav container">
-                <ul class="menu">
-                    <li class="menu-item">
-                        <a class="menu-item-link" href="#skills">О себе</a>
+                <ul class="header-nav__list">
+                    <li class="header-nav__item">
+                        <a class="header-nav__link" href="#development">О себе</a>
                     </li>
-                    <li class="menu-item">
-                        <a class="menu-item-link" href="#">Навыки</a>
+                    <li class="header-nav__item">
+                        <a class="header-nav__link" href="#skills">Навыки</a>
                     </li>
-                    <li class="menu-item">
-                        <a class="menu-item-link" href="#">Карта развития</a>
+                    <li class="header-nav__item">
+                        <a class="header-nav__link" href="#plans">Карта развития</a>
                     </li>
-                    <li class="menu-item">
-                        <a class="menu-item-link" href="#">Моё портфолио</a>
+                    <li class="header-nav__item">
+                        <a class="header-nav__link" href="#portfolio">Моё портфолио</a>
                     </li>
-                    <li class="menu-item">
-                        <a class="menu-item-link" href="#">Контакты</a>
+                    <li class="header-nav__item">
+                        <a class="header-nav__link" href="#">Контакты</a>
                     </li>
                 </ul>
             </nav>
         </header>
         <main>
-            <section class="about container">
+            <section class="preview container">
                 <h2 class="visually-hidden">О себе</h2>
-                <img class="about-photo" src="./img/my photo.jpeg" width="400" height="500" alt="Фотография Front-end разработчика Михала Бабайчев">
-                <div class="about-description">
-                    <p class="about-lead">Меня зовут Михаил <br> я Front-End разработчик </p>
-                    <p class="about-text">Привет, в марте 2021 решил попробовать что то новое для себя, так как на слуху в основном было программирование, решил углубиться в эту тему и посмотреть какие бывают языки и направления, наткнулся на Front-End, показалась интересно разрабатывать Web-интерфесы.</p>
+                <img class="preview-photo" src="./img/my photo.jpeg" width="400" height="500" alt="Фотография Front-end разработчика Михала Бабайчев">
+                <div class="preview-description">
+                    <p class="preview-description__lead">Меня зовут Михаил <br> я Front-End разработчик </p>
+                    <p class="preview-description__text">Привет, в марте 2021 решил попробовать что то новое для себя, так как на слуху в основном было программирование, решил углубиться в эту тему и посмотреть какие бывают языки и направления, наткнулся на Front-End, показалась интересно разрабатывать Web-интерфесы.</p>
                 </div>
             </section>
-            <section class="skills container">
-                <h2 class="skills-title">Навыки</h2>
+            <section class="skills container" id="skills">
+                <h2 class="skills__title">Навыки</h2>
                 <ul class="skills-list">
-                    <li class="skills-item">                         
-                        <div class="skills-item-head">
-                            <img src="./img/html5.svg" width="65" height="65" alt="">
-                            <h3 class="skills-item-title">HTML 5</h3>
+                    <li class="skills-list__item">                         
+                        <div class="skills-list__head">
+                            <img src="./img/file_type_html_icon_130541.svg" width="65" height="65" alt="">
+                            <h3 class="skills-list__title">HTML 5</h3>
                         </div>
-                        <p class="skills-item-text">Именно он создает каркас вашего сайта или приложения, а пятая версия позволит мне создавать более SEO-оптимизированную структуру вашего продукта</p>
+                        <p class="skills-item__text">Здесь написать что именно умею делать на базе html</p>
                     </li>
-                    <li class="skills-item">                         
-                        <div class="skills-item-head">
-                            <img src="./img/css3.svg" width="65" height="65" alt="">
-                            <h3 class="skills-item-title">CSS</h3>
+                    <li class="skills-list__item">                         
+                        <div class="skills-list__head">
+                            <img src="./img/file_type_css_icon_130661.svg" width="65" height="65" alt="">
+                            <h3 class="skills-list__title">CSS</h3>
                         </div>
-                        <p class="skills-item-text">Этот язык стилей позволяет мне создавать абсолютно любой внешний вид вашего сайта или приложения. Все ограничивается только вашей фантазией!</p>
+                        <p class="skills-item__text">Этот язык стилей позволяет мне создавать абсолютно любой внешний вид вашего сайта или приложения. Все ограничивается только вашей фантазией!</p>
                     </li>
-                    <li class="skills-item">                         
-                        <div class="skills-item-head">
+                    <li class="skills-list__item">                         
+                        <div class="skills-list__head">
                             <img src="./img/JS.svg"  width="65" height="65" alt="">
-                            <h3 class="skills-item-title">Java Script</h3>
+                            <h3 class="skills-list__title">Java Script</h3>
                         </div>
-                        <p class="skills-item-text">Этот язык программирования позволяет оживить все что угодно: слайдеры, окна, подсказки, вкладки, получение данных от сервера и многое другое</p>
+                        <p class="skills-item__text">Этот язык программирования позволяет оживить все что угодно: слайдеры, окна, подсказки, вкладки, получение данных от сервера и многое другое</p>
                     </li>
-                    <li class="skills-item">                         
-                        <div class="skills-item-head">
-                            <img src="./img/React.svg" width="65" height="65" alt="">
-                            <h3 class="skills-item-title">React</h3>
+                    <li class="skills-list__item">                         
+                        <div class="skills-list__head">
+                            <img src="./img/github_git_hub_logo_icon_132878.svg" width="65" height="65" alt="">
+                            <h3 class="skills-list__title">Git</h3>
                         </div>
-                        <p class="skills-item-text">Эта библиотека позволяет создавать web-приложения. Мы можем создать максимально интерактивный продукт именно под ваши цели</p>
+                        <p class="skills-item__text">Эта библиотека позволяет создавать web-приложения. Мы можем создать максимально интерактивный продукт именно под ваши цели</p>
                     </li>
-                    <li class="skills-item">                         
-                        <div class="skills-item-head">
-                            <img src="./img/React.svg" width="65" height="65" alt="">
-                            <h3 class="skills-item-title">React</h3>
+                    <li class="skills-list__item">                         
+                        <div class="skills-list__head">
+                            <img src="./img/sass_original_logo_icon_146350.svg" width="65" height="65" alt="">
+                            <h3 class="skills-list__title">Sass</h3>
                         </div>
-                        <p class="skills-item-text">Эта библиотека позволяет создавать web-приложения. Мы можем создать максимально интерактивный продукт именно под ваши цели</p>
+                        <p class="skills-item__text">Эта библиотека позволяет создавать web-приложения. Мы можем создать максимально интерактивный продукт именно под ваши цели</p>
                     </li>
-                    <li class="skills-item">                         
-                        <div class="skills-item-head">
-                            <img src="./img/React.svg" width="65" height="65" alt="">
-                            <h3 class="skills-item-title">React</h3>
+                    <li class="skills-list__item">                         
+                        <div class="skills-list__head">
+                            <img src="./img/gulp_plain_logo_icon_146485.svg" width="65" height="65" alt="">
+                            <h3 class="skills-list__title">Gulp</h3>
                         </div>
-                        <p class="skills-item-text">Эта библиотека позволяет создавать web-приложения. Мы можем создать максимально интерактивный продукт именно под ваши цели</p>
+                        <p class="skills-item__text">Эта библиотека позволяет создавать web-приложения. Мы можем создать максимально интерактивный продукт именно под ваши цели</p>
                     </li>
-                    <li class="skills-item">                         
-                        <div class="skills-item-head">
-                            <img src="./img/React.svg" width="65" height="65" alt="">
-                            <h3 class="skills-item-title">React</h3>
+                    <li class="skills-list__item">                         
+                        <div class="skills-list__head">
+                            <img src="./img/webpack_original_logo_icon_146300.svg" width="65" height="65" alt="">
+                            <h3 class="skills-list__title">Webpack</h3>
                         </div>
-                        <p class="skills-item-text">Эта библиотека позволяет создавать web-приложения. Мы можем создать максимально интерактивный продукт именно под ваши цели</p>
+                        <p class="skills-item__text">Эта библиотека позволяет создавать web-приложения. Мы можем создать максимально интерактивный продукт именно под ваши цели</p>
+                    </li>
+                    <li class="skills-list__item">                         
+                        <div class="skills-list__head">
+                            <img src="./img/React.svg" width="65" height="65" alt="">
+                            <h3 class="skills-list__title">React</h3>
+                        </div>
+                        <p class="skills-item__text">Эта библиотека позволяет создавать web-приложения. Мы можем создать максимально интерактивный продукт именно под ваши цели</p>
+                    </li>
+                    <li class="skills-list__item">                         
+                        <div class="skills-list__head">
+                            <img src="./img/file_type_typescript_official_icon_130107.svg" width="65" height="65" alt="">
+                            <h3 class="skills-list__title">Type Script</h3>
+                        </div>
+                        <p class="skills-item__text">Эта библиотека позволяет создавать web-приложения. Мы можем создать максимально интерактивный продукт именно под ваши цели</p>
                     </li>
                 </ul>
             </section>
-            <section class="plan container #skills">
-                <h2>Мой план развития</h2>
-                <p>
-                    <ul>
-                        <li>
-                            <p>Март 2022</p>
-                            <p>Начал изучать основы HTML</p>
-                        </li>
-                        <li>
-                            <p>Апрель 2022</p>
-                            <p>Погружаюсь в CSS и пишу свой первый сайт</p>
-                        </li>
-                        <li>
-                            <p>Май 2022</p>
-                            <p>Закрепляю изученные материалы и практикуюсь на макетах</p>
-                        </li>
-                        <li>
-                            <p>Июнь 2022</p>
-                            <p>Изучаю адаптивную верстку и применяю ее на практике</p>
-                        </li>
-                        <li>
-                            <p>Июль 2022</p>
-                            <p>Погружаюсь в основы JavaScript и пишу свою первую программу</p>
-                        </li>
-                        <li>
-                            <p>Август 2022</p>
-                            <p>Погружаюсь в структуры данных и ОПП</p>
-                        </li>
-                        <li>
-                            <p>Сентябрь 2022</p>
-                            <p>Изучаю MVP</p>
-                        </li>
-                        <li>
-                            <p>Октябрь 2022</p>
-                            <p>Погружаюсь в React и Redux</p>
-                        </li>
-                        <li>
-                            <p>Ноябрь 2022</p>
-                            <p>Созддаю новые проекты используя JavaScript совместно с библиотекой React</p>
-                        </li>
-                        <li>
-                            <p>Декабрь 2022</p>
-                            <p></p>
-                        </li>
-                    </ul>
-                </p>
+            <!-- <section class="plan container #development">
+                <h2 class="development-title">Мой план развития</h2>
+                <div class="dev">
+                    <span class="radius"></span>
+                    <div class="development-map">
+                        <ul class="development">
+                            <li class="development-list">
+                                <p>Апрель 2022</p>
+                                <p>Изучение основ HTML</p>
+                            </li>
+                            <li>
+                                <p>Май 2022</p>
+                                <p>Погружение в CSS и верстка свой первый сайт</p>
+                            </li>
+                            <li>
+                                <p>Июнь 2022</p>
+                                <p>Практикуюсь на макетах закрепляя знания</p>
+                            </li>
+                            <li>
+                                <p>Июль 2022</p>
+                                <p>Изучение адаптива, и Sass</p>
+                            </li>
+                            <li>
+                                <p>Август 2022</p>
+                                <p>Знакомство с Git, и с JavaScript</p>
+                            </li>
+                            <li>
+                                <p>Февраль 2023</p>
+                                <p>Знакомство с React, React Redux</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="development-maps">
+                        <span class="radius"></span>
+                        <ul>
+                            <li>
+                                <p>Сентябрь 2022</p>
+                                <p>Изучение основ JavaScript, и Gulp</p>
+                            </li>
+                            <li>
+                                <p>Октябрь 2022</p>
+                                <p>Изучение API, DOM</p>
+                            </li>
+                            <li>
+                                <p>Ноябрь 2022</p>
+                                <p>Закрепление знаний на практике, проект на JavaScript, знакомство с Webpack</p>
+                            </li>
+                            <li>
+                                <p>Декабрь 2022</p>
+                                <p>SPA, OOP, MVP, практика</p>
+                            </li>
+                            <li>
+                                <p>Январь 2023</p>
+                                <p>Работо с протоколами HTTP, закрепление знаний</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section> -->
+            <section class="plans container" id="plans">
+                <h2 class="plans__title">План развития</h2>
+                <p class="plans__text">К концу 2023 я планирую изучить фреймворк React, React Redux Toolkit, лучше изучить такие темы как Протоколы и сети
+                    TypeScript, регулярные выражения, изуить Патарны проектирования.</p>
+            </section>
+            <section class="portfolio container" id="portfolio">
+                <h2 class="portfolio__title">Моё портфолио</h2>
+                <div class="portfolio-info">
+                    <img class="portfolio-info__img" src="./img/keksobooking.png" alt="" width="800" height="500">
+                    <div class="portfolio-info__description">
+                        <ul class="portfolio-info__list">
+                            <li>
+                                <button class="portfolio-info__button">Информация о сайте</button>
+                            </li>
+                            <li>
+                                <button class="portfolio-info__button">Чему я научился</button>
+                            </li>
+                        </ul>
+                        <ul class="portfolio-info__list-description">
+                            <li>
+                                <p class="portfolio-info__list-text">
+                                    Сервис размещения объявлений об аренде недвижимости в Токио. Пользователи делятся информацией о своём объекте недвижимости, размещают фотографии, указывают адрес, перемещая метку по карте города. Кроме этого, можно посмотреть на объявления, размещённые другими пользователями.
+                                </p>
+                            </li>
+                            <li>
+                                <p class="portfolio-info__list-text visually-hidden">
+                                    На этом курсе вы научитесь делать настоящие проекты, такие же по уровню сложности, как в индустрии. И будете делать их правильно, чтобы после обучения выдавать результат высокого уровня, за который компании готовы платить.
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <ul class="portfolio-present">
+                    <li class="portfolio-present-item">
+                        <img src="./img/04214f07edd50ef6dc1f6ecc3093b330.jpg" alt="" width="282" height="218">
+                    </li>
+                    <li class="portfolio-present-item">
+                        <img src="./img/41514_01_home_original.jpg" alt="" width="282" height="218">
+                    </li>
+                    <li class="portfolio-present-item">
+                        <img src="./img/54099-original.jpg" alt="" width="282" height="218">
+                    </li>
+                    <li class="portfolio-present-item">
+                        <img src="./img/keksobooking.png" alt="" width="282" height="218">
+                    </li>
+                </ul>
             </section>
         </main>
         <footer>
